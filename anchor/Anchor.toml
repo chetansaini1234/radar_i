@@ -2,7 +2,7 @@
 seeds = false
 
 [programs.devnet]
-insurance_program = "HhYjkcQYHthabXrF5rVxnGwNTh8oEt1GqMkZrmh8sdi4"
+insurance_program = "4w2ksCnBSp2S4hSNUm1YZg8NzdTZ68mone4h6AkFirzQ"
 
 [provider]
 cluster = "devnet"
@@ -14,3 +14,6 @@ test = "anchor test"
 [test]
 startup_wait = 15000
 shutdown_wait = 5000
+
+[idl]
+out_dir = "target/idl"

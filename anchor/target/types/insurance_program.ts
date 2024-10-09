@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/insurance_program.json`.
  */
 export type InsuranceProgram = {
-  "address": "HhYjkcQYHthabXrF5rVxnGwNTh8oEt1GqMkZrmh8sdi4",
+  "address": "4w2ksCnBSp2S4hSNUm1YZg8NzdTZ68mone4h6AkFirzQ",
   "metadata": {
     "name": "insuranceProgram",
     "version": "0.1.0",

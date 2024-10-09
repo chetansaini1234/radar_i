@@ -1,5 +1,3 @@
-// WalletConnectionProvider.tsx
-
 "use client";
 import React, { ReactNode, useMemo } from 'react';
 import { ConnectionProvider, WalletProvider } from '@solana/wallet-adapter-react';
@@ -21,14 +19,14 @@ interface WalletConnectionProviderProps {
 
 export const WalletConnectionProvider: React.FC<WalletConnectionProviderProps> = ({ children }) => {
   const network = 'devnet';
-  const endpoint = useMemo(() => clusterApiUrl(network), [network]);
+  const endpoint = useMemo(() => clusterApiUrl(network), []); // Removed 'network' from the dependency array
 
   const wallets = useMemo(
     () => [
       new PhantomWalletAdapter(),
       new SolflareWalletAdapter(),
     ],
-    [network]
+    [] // Removed 'network' from the dependency array
   );
 
   return (

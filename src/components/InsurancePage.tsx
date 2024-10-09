@@ -1,4 +1,3 @@
-// InsurancePage.tsx
 "use client";
 import { useState } from 'react';
 import { Input } from "../components/ui/input";
@@ -7,7 +6,7 @@ import { Drawer, DrawerContent, DrawerTrigger } from "../components/ui/drawer";
 import { Card, CardHeader, CardContent, CardTitle, CardDescription, CardFooter } from "../components/ui/card";
 import { Label } from "../components/ui/label";
 import { UploadCloud } from 'lucide-react';
-import { cn } from "@/lib/utils"; // Ensure you have this utility function
+import { cn } from "@/lib/utils";
 import React from 'react';
 import { Program, AnchorProvider, Idl } from "@project-serum/anchor";
 import { useAnchorWallet, useConnection } from "@solana/wallet-adapter-react";
@@ -32,9 +31,7 @@ export function InsurancePage() {
   const wallet = useAnchorWallet();
   const { connection } = useConnection();
 
-  const provider = wallet ? new AnchorProvider(connection, wallet, {
-    preflightCommitment: 'processed',
-  }) : null;
+  const provider = wallet ? new AnchorProvider(connection, wallet, { preflightCommitment: 'processed' }) : null;
   const programID = new PublicKey(idl.address);  
   const program = provider ? new Program(idl as unknown as Idl, programID, provider) : null;
 
@@ -201,8 +198,8 @@ export function InsurancePage() {
                   </ul>
                 </div>
               )}
-              <p className="text-sm text-gray-500">
-                If you have any type of health care problem, share each and every document. If you don't tell us now, you may face problems in the future. If you don't have any medical issues, write a note on a white page stating that you are fit and fine, and put your signature on it.
+                            <p className="text-sm text-gray-500">
+                If you have any type of health care problem, share each and every document. If you don&#39;t tell us now, you may face problems in the future. If you don&#39;t have any medical issues, write a note on a white page stating that you are fit and fine, and put your signature on it.
               </p>
             </div>
           </CardContent>

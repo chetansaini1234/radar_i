@@ -48,7 +48,7 @@ export function ClaimPage() {
                                 <h3 className="font-semibold">1. Proof of Death:</h3>
                                 <ul className="list-disc list-inside text-sm">
                                     <li>Death Certificate (issued by the government)</li>
-                                    <li>Hospital/Doctor's Report (detailing the cause of death)</li>
+                                    <li>Hospital/Doctor&#39;s Report (detailing the cause of death)</li>
                                     <li>Post-Mortem/Autopsy Report (if applicable)</li>
                                 </ul>
                             </div>
@@ -79,7 +79,7 @@ export function ClaimPage() {
                                 <h3 className="font-semibold">5. Cause of Death Specific Documents:</h3>
                                 <ul className="list-disc list-inside text-sm">
                                     <li>Critical Illness Report (if the death is related to an illness covered by the policy)</li>
-                                    <li>Attending Physician Statement (formal statement from the treating doctor)</li>
+                                    <li>Attending Physician&#39;s Statement (formal statement from the treating doctor)</li>
                                 </ul>
                             </div>
                             <div className="space-y-2">
@@ -99,8 +99,7 @@ export function ClaimPage() {
                                 <div className="flex flex-col items-center justify-center pt-5 pb-6">
                                     <UploadCloud className="w-8 h-8 mb-4 text-gray-500" />
                                     <p className="mb-2 text-sm text-gray-500">
-                                        <span className="font-semibold">Click to upload</span> or
-                                        drag and drop
+                                        <span className="font-semibold">Click to upload</span> or drag and drop
                                     </p>
                                     <p className="text-xs text-gray-500">
                                         Multiple files allowed
@@ -136,8 +135,7 @@ export function ClaimPage() {
                             Apply for Claiming Process
                         </Button>
                         <p className="text-xs text-center text-gray-500">
-                            Our team will reach out to you within 1-4 weeks via call or, if
-                            needed, in person.
+                            Our team will reach out to you within 1-4 weeks via call or, if needed, in&nbsp;person.
                         </p>
                     </CardFooter>
                 </Card>

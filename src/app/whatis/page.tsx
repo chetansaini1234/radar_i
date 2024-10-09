@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image'; // Import Next.js Image component
 import { Card, CardHeader, CardContent, CardTitle, CardDescription } from '../../components/ui/card';
 
 export default function WhatIs() {
@@ -8,10 +9,13 @@ export default function WhatIs() {
     <div className="w-screen min-h-screen bg-gray-900 text-white overflow-auto">
       <header className="p-6">
         <div className="w-32 h-16">
-          <img
+          {/* Replaced <img> with Next.js optimized <Image /> */}
+          <Image
             src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3d_i-lcYESZp5zUHhmnoNxl1TG55485IMrT.png"
             alt="3D 'i' Logo"
-            style={{ objectFit: 'contain', width: '100%', height: '100%' }}
+            width={128} // Provide a width
+            height={64} // Provide a height
+            style={{ objectFit: 'contain' }}
           />
         </div>
       </header>
@@ -48,7 +52,9 @@ export default function WhatIs() {
             </section>
           </CardContent>
           <div className="px-6 pb-6">
-            <p className="text-center">Join Project Insure today to secure your future and provide peace of mind for your loved ones with our innovative, blockchain-powered life insurance solutions.</p>
+            <p className="text-center">
+              Join Project Insure today to secure your future and provide peace of mind for your loved ones with our innovative, blockchain-powered life insurance solutions.
+            </p>
           </div>
         </Card>
       </main>
