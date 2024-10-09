@@ -1,5 +1,5 @@
-import RadarIFeature from '@/components/radar_i/radar_i-feature'
+// import RadarIFeature from '@/components/radar_i/radar_i-feature'
 
-export default function Page() {
-  return <RadarIFeature />
-}
+// export default function Page() {
+//   return <RadarIFeature />
+// }
