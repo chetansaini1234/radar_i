@@ -1,0 +1,16 @@
+[features]
+seeds = false
+
+[programs.devnet]
+insurance_program = "HhYjkcQYHthabXrF5rVxnGwNTh8oEt1GqMkZrmh8sdi4"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "anchor test"
+
+[test]
+startup_wait = 15000
+shutdown_wait = 5000
