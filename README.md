@@ -1,3 +1,10 @@
+
+
+
+mvp = https://radar-i.vercel.app
+
+
+
 # radar_i
 
 This project is a preview. Please give feedback to [beeman](https://x.com/beeman_nl) on X.
